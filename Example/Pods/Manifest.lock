@@ -1,0 +1,16 @@
+PODS:
+  - GGWindowManager (0.1.0)
+
+DEPENDENCIES:
+  - GGWindowManager (from `../`)
+
+EXTERNAL SOURCES:
+  GGWindowManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGWindowManager: 09f680bf011d5ddacdeb29cac5a017ad0e401466
+
+PODFILE CHECKSUM: e79f3c5f084dfad9c653465dd41cdadcd27266f7
+
+COCOAPODS: 1.17.0
