@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GGWindowManager_Example' do
+  pod 'GGWindowManager', :path => '../'
+
+  target 'GGWindowManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
