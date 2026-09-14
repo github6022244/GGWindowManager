@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "GGWindowManager.h"
+#import "UIWindow+GG.h"
 
 FOUNDATION_EXPORT double GGWindowManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char GGWindowManagerVersionString[];
