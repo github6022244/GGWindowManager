@@ -1,4 +1,20 @@
+//
+//  GGWindowManager.m
+//  GGCommenAppFundation
+//
+//  Created by GG on 2022/6/1.
+//
+
 #import "GGWindowManager.h"
+#import "GGWindowDefine.h"
+#import "GGWindowLogHelper.h"
+
+@interface GGWindowManager ()
+
+/// 当前活跃的 Scene
+@property (nonatomic, weak, readwrite, nullable) UIWindowScene *currentActiveScene;
+
+@end
 
 @implementation GGWindowManager
 
@@ -11,93 +27,120 @@
     return instance;
 }
 
-#pragma mark - Active Scene
-
-- (void)sceneDidBecomeActive:(UIScene *)scene {
-    // 过滤非 UIWindowScene
-    if (scene && ![scene isKindOfClass:[UIWindowScene class]]) {
-        NSLog(@"[GGWindowManager] sceneDidBecomeActive 忽略非 UIWindowScene: %@", scene);
-        return;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self _registerSceneNotifications];
     }
-    
-    UIWindowScene *windowScene = (UIWindowScene *)scene;
-    
-    // nil 视为无效输入，不更新
-    if (!windowScene) {
-        NSLog(@"[GGWindowManager] sceneDidBecomeActive 传入 nil，忽略");
-        return;
-    }
-    
-    // 无变化，不重复赋值
-    if (_currentActiveScene == windowScene) {
-        return;
-    }
-    
-    _currentActiveScene = windowScene;
-    NSLog(@"[GGWindowManager] activeScene 更新: %@", [self _sceneDescription:windowScene]);
+    return self;
 }
 
-- (void)sceneDidDisconnect:(UIScene *)scene {
-    // 过滤非 UIWindowScene
-    if (scene && ![scene isKindOfClass:[UIWindowScene class]]) {
-        NSLog(@"[GGWindowManager] sceneDidDisconnect 忽略非 UIWindowScene: %@", scene);
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
++ (void)start {
+    GGWindowLog(@"[GGWindowManager] start 被调用，提前初始化并注册 Scene 通知");
+    [GGWindowManager sharedInstance];
+}
+
+#pragma mark - 通知注册
+
+- (void)_registerSceneNotifications {
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    
+    // Scene 激活：UISceneDidActivateNotification
+    // 官方文档：Scene 变为活跃时发出（对应 sceneDidBecomeActive:）
+    [center addObserver:self
+               selector:@selector(_handleSceneDidActivate:)
+                   name:UISceneDidActivateNotification
+                 object:nil];
+    
+    // Scene 断开：UISceneDidDisconnectNotification
+    // 官方文档：Scene 被销毁时发出（对应 sceneDidDisconnect:）
+    [center addObserver:self
+               selector:@selector(_handleSceneDidDisconnect:)
+                   name:UISceneDidDisconnectNotification
+                 object:nil];
+    
+    // Scene 进入后台：UISceneDidEnterBackgroundNotification
+    // 用于"活跃 Scene 进入后台"时清空，避免拿到非活跃 Scene
+    [center addObserver:self
+               selector:@selector(_handleSceneDidEnterBackground:)
+                   name:UISceneDidEnterBackgroundNotification
+                 object:nil];
+    
+    GGWindowLog(@"[GGWindowManager] 已注册 Scene 通知监听");
+}
+
+#pragma mark - 通知处理
+
+- (void)_handleSceneDidActivate:(NSNotification *)notification {
+    UIScene *scene = notification.object;
+    GGWindowLog(@"[GGWindowManager] 收到 UISceneDidActivateNotification: %@",
+                [GGWindowLogHelper sceneBriefDescription:scene]);
+    
+    if (![scene isKindOfClass:[UIWindowScene class]]) {
+        GGWindowLog(@"⚠️ 忽略非 UIWindowScene: %@", scene);
         return;
     }
     
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     
-    // 内部判断：只有断开的是"当前记录的活跃 Scene"才清空
-    if (windowScene && _currentActiveScene != windowScene) {
-        // 断开的不是记录的活跃 Scene，无需清空
+    if (_currentActiveScene == windowScene) {
+        GGWindowLog(@"activeScene 无变化，跳过更新");
         return;
     }
     
-    if (!_currentActiveScene) {
-        // 本来就没有记录，无需清空
+    UIWindowScene *oldScene = _currentActiveScene;
+    _currentActiveScene = windowScene;
+    
+    GGWindowLog(@"✅ activeScene 更新: %@ -> %@",
+                [GGWindowLogHelper sceneDescription:oldScene],
+                [GGWindowLogHelper sceneDescription:windowScene]);
+}
+
+- (void)_handleSceneDidDisconnect:(NSNotification *)notification {
+    UIScene *scene = notification.object;
+    GGWindowLog(@"[GGWindowManager] 收到 UISceneDidDisconnectNotification: %@",
+                [GGWindowLogHelper sceneBriefDescription:scene]);
+    
+    if (![scene isKindOfClass:[UIWindowScene class]]) {
+        GGWindowLog(@"⚠️ 忽略非 UIWindowScene: %@", scene);
         return;
     }
     
-    NSLog(@"[GGWindowManager] activeScene 清空（原: %@）", [self _sceneDescription:_currentActiveScene]);
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    
+    // 断开的不是记录的活跃 Scene，无需清空
+    if (_currentActiveScene != windowScene) {
+        GGWindowLog(@"断开的 Scene 不是记录的活跃 Scene，无需清空");
+        return;
+    }
+    
+    GGWindowLog(@"✅ activeScene 清空（原: %@）", [GGWindowLogHelper sceneDescription:_currentActiveScene]);
     _currentActiveScene = nil;
 }
 
-#pragma mark - 便捷方法
-
-- (NSString *)_sceneDescription:(UIWindowScene *)scene {
-    if (!scene) return @"nil";
+- (void)_handleSceneDidEnterBackground:(NSNotification *)notification {
+    UIScene *scene = notification.object;
+    GGWindowLog(@"[GGWindowManager] 收到 UISceneDidEnterBackgroundNotification: %@",
+                [GGWindowLogHelper sceneBriefDescription:scene]);
     
-    return [NSString stringWithFormat:
-            @"<UIWindowScene: %p, state=%@(%ld), windows=%lu, keyWindow=%@>",
-            scene,
-            [self _activationStateDescription:scene.activationState],
-            (long)scene.activationState,
-            (unsigned long)scene.windows.count,
-            [self _keyWindowBrief:scene]];
-}
-
-- (NSString *)_activationStateDescription:(UISceneActivationState)state {
-    switch (state) {
-        case UISceneActivationStateUnattached:
-            return @"Unattached(未连接)";
-        case UISceneActivationStateForegroundActive:
-            return @"ForegroundActive(前台活跃)";
-        case UISceneActivationStateForegroundInactive:
-            return @"ForegroundInactive(前台非活跃)";
-        case UISceneActivationStateBackground:
-            return @"Background(后台)";
-        default:
-            return [NSString stringWithFormat:@"Unknown(%ld)", (long)state];
+    if (![scene isKindOfClass:[UIWindowScene class]]) {
+        return;
     }
-}
-
-- (NSString *)_keyWindowBrief:(UIWindowScene *)scene {
-    for (UIWindow *w in scene.windows) {
-        if (w.isKeyWindow) {
-            return [NSString stringWithFormat:@"<%p level=%.0f hidden=%@>",
-                    w, w.windowLevel, w.hidden ? @"YES" : @"NO"];
-        }
+    
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    
+    // 只有"记录的活跃 Scene 进入后台"才清空
+    if (_currentActiveScene != windowScene) {
+        return;
     }
-    return @"nil";
+    
+    GGWindowLog(@"✅ activeScene 清空（进入后台，原: %@）",
+                [GGWindowLogHelper sceneDescription:_currentActiveScene]);
+    _currentActiveScene = nil;
 }
 
 @end

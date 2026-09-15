@@ -1,16 +1,25 @@
 PODS:
-  - GGWindowManager (0.1.0)
+  - GGWindowManager (0.1.1)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
 
 DEPENDENCIES:
   - GGWindowManager (from `../`)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   GGWindowManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGWindowManager: 7f8a7eda548d4d4059adcff876073903e9193469
+  GGWindowManager: 8ac51a5fd7e30605ac7a2550eb3362bc9565f969
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
 
-PODFILE CHECKSUM: 778121ea08c27701a3b0c18a4029ed15361b6673
+PODFILE CHECKSUM: 27fd4b955c9fa6d1d1c73de36a218b25b15932a8
 
 COCOAPODS: 1.17.0

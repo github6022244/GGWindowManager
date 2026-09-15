@@ -8,7 +8,6 @@
 #import "SceneDelegate.h"
 #import "GGAppDelegate.h"
 #import "GGViewController.h"
-#import <GGWindowManager.h>
 
 @implementation SceneDelegate
 
@@ -18,18 +17,15 @@
     }
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     
-    [[GGWindowManager sharedInstance] sceneDidBecomeActive:scene];
-    
     [self setUpWindowWithScene:windowScene];
 }
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // 记录当前用户正在交互的 Scene
-    [[GGWindowManager sharedInstance] sceneDidBecomeActive:scene];
 }
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
-    [[GGWindowManager sharedInstance] sceneDidDisconnect:scene];
+    
 }
 
 - (void)sceneWillResignActive:(UIScene *)scene {

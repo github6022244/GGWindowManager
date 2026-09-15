@@ -8,11 +8,17 @@
 
 #import "GGAppDelegate.h"
 
+#import <GGWindowManager.h>
+
 @implementation GGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // 可选,不 start 也能正常工作
+    [GGWindowManager start];
+    
     return YES;
 }
 

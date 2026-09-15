@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "GGWindowDefine.h"
+#import "GGWindowLogHelper.h"
 #import "GGWindowManager.h"
 #import "UIWindow+GG.h"
 

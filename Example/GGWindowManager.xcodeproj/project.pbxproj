@@ -64,7 +64,7 @@
 		7AC8F578962FFB464A07A925 /* Pods-GGWindowManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGWindowManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-GGWindowManager_Tests/Pods-GGWindowManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92501F8F9AA8EB90CA09BEFF /* Pods-GGWindowManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGWindowManager_Example.release.xcconfig"; path = "Target Support Files/Pods-GGWindowManager_Example/Pods-GGWindowManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AEC7E1BDCFF5F02971EF6502 /* GGWindowManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGWindowManager.podspec; path = ../GGWindowManager.podspec; sourceTree = "<group>"; };
+		AEC7E1BDCFF5F02971EF6502 /* GGWindowManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGWindowManager.podspec; path = ../GGWindowManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B519A11F59AFA6A9223B9D33 /* Pods_GGWindowManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGWindowManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66B9FD53057E3C8006A92F9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C66B9FD63057E3C8006A92F9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -360,10 +360,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GGWindowManager_Example/Pods-GGWindowManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GGWindowManager/GGWindowManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGWindowManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

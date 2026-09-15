@@ -7,30 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25B73C5937465005022BC38200FF51EF /* GGWindowManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1F589F1AF9823CAA3CE2A720BBF0D2 /* GGWindowManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30B30F02795C3B6783506C642D284DF4 /* GGWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7025661A20EC3EF53B9E890F6C73AA72 /* GGWindowManager.m */; };
-		378031B681AF36D5BB543CB776060671 /* GGWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 790415C3676FFE6DC7A322C5032D1CA2 /* GGWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72219A369107B5F9326D7919B756BDFB /* UIWindow+GG.m in Sources */ = {isa = PBXBuildFile; fileRef = 548D7B7A9D0CBB2598ED5ECDE87F25D4 /* UIWindow+GG.m */; };
+		03393819F59038BEF302844BFD76264B /* Pods-GGWindowManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE624AFBA5AC2A28F295778F62D547 /* Pods-GGWindowManager_Example-dummy.m */; };
+		07137759BC29251F1E2757134F40EBB8 /* GGWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F68A5A1B8F61A7AE7BC3A0724341A4B7 /* GGWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A488A5D0AEF2BD9580E8AC67CA7F47A /* Pods-GGWindowManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B63937583CB13EC0CF8B718E9FB01C /* Pods-GGWindowManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12220F4861601349F6B54CEF39209193 /* GGWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 706547AD768BEA535D80EAF3DA834C33 /* GGWindowManager.m */; };
+		14F6602F47FF59347CB6807CE217EDC5 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4749FE60BF7849A18E381FF45A14525F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1739C4B63D12177E58B7110F21E939EB /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3F5F72C111A28DAAD0A0340E157A66 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EDFC51EE2DA05075432624068E9BC7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDF38044858BE956C25507330F556C0 /* Foundation.framework */; };
+		517CF33F75EA768ED4B7F0F440F54A7E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B2484203442C1A2A674DD77A7674E /* SVRadialGradientLayer.m */; };
+		6037BA6633BDFF4F63D6C8B7C70D6160 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D3BB1E071E08C2E9506B9AE51B69F8 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		760708B6C64F185D360FB238B81B729C /* GGWindowDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = E3CFA7B62F80695B99EAFAE381AE914E /* GGWindowDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7804E0B3C98A2FE1E98AF544E88C9C3C /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C91D5087E348BBA1832E48E62AD9A23F /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B0DD32902633C7FF95B5745D8322BC3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93926851AF33BC18D3C1537711204BFE /* SVProgressHUD.bundle */; };
+		82B6A9E94790A6D6FD7ED9069CF9C8D0 /* GGWindowLogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4362642FF4D18FAE049CB7594D356B63 /* GGWindowLogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8333276835B10D9E8B4A6BB88EF58EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDF38044858BE956C25507330F556C0 /* Foundation.framework */; };
+		89717EC07E6324D3405867E754AE9131 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DA76AB235F94873AD5CABDDE823D2C6E /* PrivacyInfo.xcprivacy */; };
 		8E57551755B3A1BD66E1C23251463DCD /* Pods-GGWindowManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F74A036A56311D6CC9E39546B025 /* Pods-GGWindowManager_Tests-dummy.m */; };
-		9F104F23798F727D51C98368165DBBAF /* UIWindow+GG.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9BFE7C096E06595A83EAF64B4E05C0 /* UIWindow+GG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91930FDB4F9CCBBA9789806D1611AE6F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68EFA26AE88D67B45464D4D6FEFA37 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97C6C9FFFF1D0FE419A0CAE48576AF6C /* UIWindow+GG.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE075D4767DED07CF37A27CB22A89C2 /* UIWindow+GG.m */; };
 		9FB4785E87937ADF7890429E4B6C35C3 /* Pods-GGWindowManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3797259A3975DDF657962B98BAE6843C /* Pods-GGWindowManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2F42257636162CD88CA1F454992A5B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB74A84DF62E0DBFFA4715EF79E08A1 /* Foundation.framework */; };
-		AB9663CA5D6A4AA88E759251013EAEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB74A84DF62E0DBFFA4715EF79E08A1 /* Foundation.framework */; };
-		BDD84EA6377987BB8CD0CEB4B084F8BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB74A84DF62E0DBFFA4715EF79E08A1 /* Foundation.framework */; };
-		C73064DBDAA0C14DCF622924DC052527 /* Pods-GGWindowManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE624AFBA5AC2A28F295778F62D547 /* Pods-GGWindowManager_Example-dummy.m */; };
-		D7EC777421CAA8EB8F9220066A323586 /* GGWindowManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 875D3B3197718B5CB276278E7B56491E /* GGWindowManager-dummy.m */; };
-		DD67121E601B488AB73C9D39B019CD72 /* Pods-GGWindowManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B63937583CB13EC0CF8B718E9FB01C /* Pods-GGWindowManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16044A27C4363B73549803A46136C59 /* GGWindowManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E56EACE86FBA3D4CC9144C1170716BD /* GGWindowManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A06B57BDB7A8027F11129E13D8A3E7 /* GGWindowLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 38972EC85C1EBCB4F4E96AEFA5378CAD /* GGWindowLogHelper.m */; };
+		A867BD36B9343E33C64BECA526673803 /* GGWindowManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A3CFE7EF7985064931C1071267210 /* GGWindowManager-dummy.m */; };
+		A877EF9650EEB2B0031A554FB9C5DD22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240FE0B35AD4E7D49F9F56BB7AE1B576 /* QuartzCore.framework */; };
+		BDD84EA6377987BB8CD0CEB4B084F8BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDF38044858BE956C25507330F556C0 /* Foundation.framework */; };
+		C27D300BCDA71B01EA6C231E32B2BBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDF38044858BE956C25507330F556C0 /* Foundation.framework */; };
+		CEC96BA519484844D19338CC420C8808 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C2E5F3ED99E2905E0AB618E95D45F /* SVIndefiniteAnimatedView.m */; };
+		CED0F2EBF641E20B066A00C205F92BA7 /* GGWindowDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EBC30F65C9ECA885B5392C8711A69A /* GGWindowDefine.m */; };
+		E30E824D8CE04C815FAD7F424CF7C270 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9320F794607AED0BB6B5A397CAEB05C7 /* SVProgressAnimatedView.m */; };
+		E9FBA7B023D19D3C77AA6B69815F7D3B /* UIWindow+GG.h in Headers */ = {isa = PBXBuildFile; fileRef = 871E2174706858C8249D9AAA28BCDD85 /* UIWindow+GG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F87D4D6C6668A4AA86232BA3BDB9A178 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA8DA35883F996408D18A2730C2B6B /* SVProgressHUD.m */; };
+		FB75853E6A0E0682E1000CFBD293EBBC /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5850C40604E45D8DF557F5D793D0F3C6 /* SVProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5169C1BC330A15C352AB576817523AB7 /* PBXContainerItemProxy */ = {
+		D83B3EACEDD00474F07C138640F33A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		DA4884B81D66B56CC8351C20F24E401F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B828C013203FB3A9917C0C6CEA20E2BD;
 			remoteInfo = "Pods-GGWindowManager_Example";
 		};
-		C43D5AA22DB56E6DC5B6E33C16E320F6 /* PBXContainerItemProxy */ = {
+		E587B4B406AA6CDD25924A22F43F1EC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -40,50 +65,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A6F3CD56EB36CDE7F50B81C03EE134 /* GGWindowManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGWindowManager.modulemap; sourceTree = "<group>"; };
 		082DB6ABFE19939D6C6BF8DB1C1F7843 /* Pods-GGWindowManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGWindowManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		14EE624AFBA5AC2A28F295778F62D547 /* Pods-GGWindowManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGWindowManager_Example-dummy.m"; sourceTree = "<group>"; };
 		14FADE197B233FFD4B0209E325D65D86 /* Pods-GGWindowManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGWindowManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A332A3B7E7584CB104BC5B3876B329B /* Pods-GGWindowManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGWindowManager_Tests-Info.plist"; sourceTree = "<group>"; };
-		2C1F589F1AF9823CAA3CE2A720BBF0D2 /* GGWindowManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-umbrella.h"; sourceTree = "<group>"; };
-		2CB74A84DF62E0DBFFA4715EF79E08A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		302EA9C38538FD9D911657624D9D1147 /* GGWindowManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGWindowManager-Info.plist"; sourceTree = "<group>"; };
+		200648E84101967BF99EBA132E89DC13 /* GGWindowManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGWindowManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		240FE0B35AD4E7D49F9F56BB7AE1B576 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2E56EACE86FBA3D4CC9144C1170716BD /* GGWindowManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-umbrella.h"; sourceTree = "<group>"; };
 		3797259A3975DDF657962B98BAE6843C /* Pods-GGWindowManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGWindowManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4317C069E6002BF49EE16BAFFEB0F7DC /* GGWindowManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GGWindowManager.modulemap; sourceTree = "<group>"; };
+		38972EC85C1EBCB4F4E96AEFA5378CAD /* GGWindowLogHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowLogHelper.m; path = GGWindowManager/Classes/GGWindowLogHelper.m; sourceTree = "<group>"; };
+		42B68765E1A8C0E5E92BC53D53C95347 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		4362642FF4D18FAE049CB7594D356B63 /* GGWindowLogHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowLogHelper.h; path = GGWindowManager/Classes/GGWindowLogHelper.h; sourceTree = "<group>"; };
+		472554FD0CC5ED0E45044EB4559A7E9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4749FE60BF7849A18E381FF45A14525F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		4C7A3CFE7EF7985064931C1071267210 /* GGWindowManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGWindowManager-dummy.m"; sourceTree = "<group>"; };
 		4CEBFA248DC287DF8F43A0AD97035551 /* Pods-GGWindowManager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGWindowManager_Tests"; path = Pods_GGWindowManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AA8DA35883F996408D18A2730C2B6B /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		52C84D05635DC42A0EBBE70C0F43CBA8 /* Pods-GGWindowManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGWindowManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		548D7B7A9D0CBB2598ED5ECDE87F25D4 /* UIWindow+GG.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+GG.m"; path = "GGWindowManager/Classes/UIWindow+GG.m"; sourceTree = "<group>"; };
-		57D2C24B670FB14B1E38B97AD8D5B1A0 /* GGWindowManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.debug.xcconfig; sourceTree = "<group>"; };
+		5850C40604E45D8DF557F5D793D0F3C6 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		5A6BFB432CF8C5E07F8CD68131184595 /* Pods-GGWindowManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGWindowManager_Example-Info.plist"; sourceTree = "<group>"; };
+		5DC485DEBDBBA475528BE9E6D14F492C /* GGWindowManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.release.xcconfig; sourceTree = "<group>"; };
 		6ECA85DB199609BC47DDBA69F4C35EFC /* Pods-GGWindowManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGWindowManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7025661A20EC3EF53B9E890F6C73AA72 /* GGWindowManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowManager.m; path = GGWindowManager/Classes/GGWindowManager.m; sourceTree = "<group>"; };
-		790415C3676FFE6DC7A322C5032D1CA2 /* GGWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowManager.h; path = GGWindowManager/Classes/GGWindowManager.h; sourceTree = "<group>"; };
-		875D3B3197718B5CB276278E7B56491E /* GGWindowManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGWindowManager-dummy.m"; sourceTree = "<group>"; };
+		6FDF38044858BE956C25507330F556C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6FE075D4767DED07CF37A27CB22A89C2 /* UIWindow+GG.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+GG.m"; path = "GGWindowManager/Classes/UIWindow+GG.m"; sourceTree = "<group>"; };
+		706547AD768BEA535D80EAF3DA834C33 /* GGWindowManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowManager.m; path = GGWindowManager/Classes/GGWindowManager.m; sourceTree = "<group>"; };
+		73C66CEFC6F88E7641C57B569B1636A3 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		82B296B3DE9173276FF560200279D18D /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		830B2484203442C1A2A674DD77A7674E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		871E2174706858C8249D9AAA28BCDD85 /* UIWindow+GG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+GG.h"; path = "GGWindowManager/Classes/UIWindow+GG.h"; sourceTree = "<group>"; };
+		882EAF8DE5626223F5C8D2CACCD7284A /* GGWindowManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-prefix.pch"; sourceTree = "<group>"; };
+		88D3BB1E071E08C2E9506B9AE51B69F8 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		9320F794607AED0BB6B5A397CAEB05C7 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		93926851AF33BC18D3C1537711204BFE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		95B20B430D9F40767EBEC061687CDFC8 /* GGWindowManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGWindowManager; path = GGWindowManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8D6199BF631A30BD1C05A2719A3B06 /* Pods-GGWindowManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGWindowManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A051D3A402528645D2714E4F22714C4C /* GGWindowManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.debug.xcconfig; sourceTree = "<group>"; };
+		A10E6C0371FD79EBB00FFD05DCB561D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A1EBC30F65C9ECA885B5392C8711A69A /* GGWindowDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGWindowDefine.m; path = GGWindowManager/Classes/GGWindowDefine.m; sourceTree = "<group>"; };
 		AABE46131AFF414CB080D1B9A8814632 /* Pods-GGWindowManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGWindowManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AD9BFE7C096E06595A83EAF64B4E05C0 /* UIWindow+GG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+GG.h"; path = "GGWindowManager/Classes/UIWindow+GG.h"; sourceTree = "<group>"; };
 		B220087F550407DB77BC1BE1AB3E6402 /* Pods-GGWindowManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGWindowManager_Example.modulemap"; sourceTree = "<group>"; };
 		B4B63937583CB13EC0CF8B718E9FB01C /* Pods-GGWindowManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGWindowManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		B9179517F4A3BAB07EC1A38B291D7C7A /* Pods-GGWindowManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGWindowManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BAD9F74A036A56311D6CC9E39546B025 /* Pods-GGWindowManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGWindowManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		BBBE59CF4A295A92A2F8DACCA1B9F3CA /* GGWindowManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GGWindowManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0568824A685B6A233D0E161C0B191CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BC3F5F72C111A28DAAD0A0340E157A66 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		C075DDAD4626B1648C2628753AFECC96 /* Pods-GGWindowManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGWindowManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1CDF7F1013E676304873E9626B9F933 /* GGWindowManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGWindowManager-Info.plist"; sourceTree = "<group>"; };
 		C284E513C473DDF325B7E96E90A3D045 /* Pods-GGWindowManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGWindowManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2EFBD5F3AFC56072C71D10BB8D92188 /* Pods-GGWindowManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGWindowManager_Tests.modulemap"; sourceTree = "<group>"; };
-		D72054B06063D67D4648B4690CBEEDA0 /* GGWindowManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGWindowManager-prefix.pch"; sourceTree = "<group>"; };
-		DFB1655822C0D4737EB9CB4FE480D412 /* GGWindowManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGWindowManager.release.xcconfig; sourceTree = "<group>"; };
-		F60D5B76D949FB3EA8647F663B58584A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C91D5087E348BBA1832E48E62AD9A23F /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		CE8C2E5F3ED99E2905E0AB618E95D45F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		D503225CBF12E6B9ADFC05C561B08521 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		DA76AB235F94873AD5CABDDE823D2C6E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = SVProgressHUD/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DE0AF009B15A3FE14C26457244E70C9D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		E3CFA7B62F80695B99EAFAE381AE914E /* GGWindowDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowDefine.h; path = GGWindowManager/Classes/GGWindowDefine.h; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE68EFA26AE88D67B45464D4D6FEFA37 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		F68A5A1B8F61A7AE7BC3A0724341A4B7 /* GGWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGWindowManager.h; path = GGWindowManager/Classes/GGWindowManager.h; sourceTree = "<group>"; };
 		FC57FC8B84ECBCBA9975614AD5E2C46B /* Pods-GGWindowManager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GGWindowManager_Example"; path = Pods_GGWindowManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		439436A4319B2BE5C41FF5265BFFF05F /* Frameworks */ = {
+		58634B2196876B07B5310C7EACCF921E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9663CA5D6A4AA88E759251013EAEBB /* Foundation.framework in Frameworks */,
+				8333276835B10D9E8B4A6BB88EF58EE4 /* Foundation.framework in Frameworks */,
+				A877EF9650EEB2B0031A554FB9C5DD22 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,23 +144,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A86AD2B40AC0098FF48791C465D8036 /* Frameworks */ = {
+		D7C1461D617BC560FD30BD62543D5CED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F42257636162CD88CA1F454992A5B8 /* Foundation.framework in Frameworks */,
+				3EDFC51EE2DA05075432624068E9BC7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8795B9C497D85C4B4F41D26A6285E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D300BCDA71B01EA6C231E32B2BBA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		326A4E65FB374991076E44A4E479A92F /* Development Pods */ = {
+		1200F65177737B30C69E981EB663220E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DB3085D2A8470943FB89664883ADB169 /* GGWindowManager */,
+				6FDF38044858BE956C25507330F556C0 /* Foundation.framework */,
+				240FE0B35AD4E7D49F9F56BB7AE1B576 /* QuartzCore.framework */,
 			);
-			name = "Development Pods";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1200F65177737B30C69E981EB663220E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16994C66D277335838A319F6BE95BC5B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				200648E84101967BF99EBA132E89DC13 /* GGWindowManager.podspec */,
+				A10E6C0371FD79EBB00FFD05DCB561D4 /* LICENSE */,
+				472554FD0CC5ED0E45044EB4559A7E9C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1DDC647C62A6068A23AD8011CCCA2171 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA76AB235F94873AD5CABDDE823D2C6E /* PrivacyInfo.xcprivacy */,
+				93926851AF33BC18D3C1537711204BFE /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		3823F163ABA5B5047E713076C857D7A8 /* Pods-GGWindowManager_Tests */ = {
@@ -130,47 +215,14 @@
 			path = "Target Support Files/Pods-GGWindowManager_Tests";
 			sourceTree = "<group>";
 		};
-		46E03E695D7FCBFF489F85EC9A03FD7E /* Pod */ = {
+		6D73DAC8178FED6845FBB64C2F9EB85F /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				BBBE59CF4A295A92A2F8DACCA1B9F3CA /* GGWindowManager.podspec */,
-				C0568824A685B6A233D0E161C0B191CF /* LICENSE */,
-				F60D5B76D949FB3EA8647F663B58584A /* README.md */,
+				CF0429E3621637B1837257A4901D29AC /* Core */,
+				92868531EE729E8AB9A12E49F4381A6F /* Support Files */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		59F23D65BA05C9DC6C433EE594297D1E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				95B20B430D9F40767EBEC061687CDFC8 /* GGWindowManager */,
-				FC57FC8B84ECBCBA9975614AD5E2C46B /* Pods-GGWindowManager_Example */,
-				4CEBFA248DC287DF8F43A0AD97035551 /* Pods-GGWindowManager_Tests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6E6DB0DFE0FCECEF745D993C3B618AB6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4317C069E6002BF49EE16BAFFEB0F7DC /* GGWindowManager.modulemap */,
-				875D3B3197718B5CB276278E7B56491E /* GGWindowManager-dummy.m */,
-				302EA9C38538FD9D911657624D9D1147 /* GGWindowManager-Info.plist */,
-				D72054B06063D67D4648B4690CBEEDA0 /* GGWindowManager-prefix.pch */,
-				2C1F589F1AF9823CAA3CE2A720BBF0D2 /* GGWindowManager-umbrella.h */,
-				57D2C24B670FB14B1E38B97AD8D5B1A0 /* GGWindowManager.debug.xcconfig */,
-				DFB1655822C0D4737EB9CB4FE480D412 /* GGWindowManager.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GGWindowManager";
-			sourceTree = "<group>";
-		};
-		7AECBA61365544F357B06DE1C8710425 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2CB74A84DF62E0DBFFA4715EF79E08A1 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = SVProgressHUD;
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		7F4633F037B14A0822EAB8486CBBE5D4 /* Targets Support Files */ = {
@@ -180,6 +232,32 @@
 				3823F163ABA5B5047E713076C857D7A8 /* Pods-GGWindowManager_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		92868531EE729E8AB9A12E49F4381A6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42B68765E1A8C0E5E92BC53D53C95347 /* SVProgressHUD.modulemap */,
+				5850C40604E45D8DF557F5D793D0F3C6 /* SVProgressHUD-dummy.m */,
+				D503225CBF12E6B9ADFC05C561B08521 /* SVProgressHUD-Info.plist */,
+				DE0AF009B15A3FE14C26457244E70C9D /* SVProgressHUD-prefix.pch */,
+				88D3BB1E071E08C2E9506B9AE51B69F8 /* SVProgressHUD-umbrella.h */,
+				82B296B3DE9173276FF560200279D18D /* SVProgressHUD.debug.xcconfig */,
+				73C66CEFC6F88E7641C57B569B1636A3 /* SVProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		9358DA57C32B0F3DAA6C386479F0AB22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B20B430D9F40767EBEC061687CDFC8 /* GGWindowManager */,
+				FC57FC8B84ECBCBA9975614AD5E2C46B /* Pods-GGWindowManager_Example */,
+				4CEBFA248DC287DF8F43A0AD97035551 /* Pods-GGWindowManager_Tests */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9F29BA8A7759335BAD6AE4DBAF702608 /* Pods-GGWindowManager_Example */ = {
@@ -199,34 +277,78 @@
 			path = "Target Support Files/Pods-GGWindowManager_Example";
 			sourceTree = "<group>";
 		};
+		C461FCCCEFBA74B7C65DBE66223C11D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D73DAC8178FED6845FBB64C2F9EB85F /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF0429E3621637B1837257A4901D29AC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BC3F5F72C111A28DAAD0A0340E157A66 /* SVIndefiniteAnimatedView.h */,
+				CE8C2E5F3ED99E2905E0AB618E95D45F /* SVIndefiniteAnimatedView.m */,
+				4749FE60BF7849A18E381FF45A14525F /* SVProgressAnimatedView.h */,
+				9320F794607AED0BB6B5A397CAEB05C7 /* SVProgressAnimatedView.m */,
+				EE68EFA26AE88D67B45464D4D6FEFA37 /* SVProgressHUD.h */,
+				51AA8DA35883F996408D18A2730C2B6B /* SVProgressHUD.m */,
+				C91D5087E348BBA1832E48E62AD9A23F /* SVRadialGradientLayer.h */,
+				830B2484203442C1A2A674DD77A7674E /* SVRadialGradientLayer.m */,
+				1DDC647C62A6068A23AD8011CCCA2171 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				326A4E65FB374991076E44A4E479A92F /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				59F23D65BA05C9DC6C433EE594297D1E /* Products */,
+				F112B9F5DA5E0CF39E4D08BD590D10FE /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C461FCCCEFBA74B7C65DBE66223C11D4 /* Pods */,
+				9358DA57C32B0F3DAA6C386479F0AB22 /* Products */,
 				7F4633F037B14A0822EAB8486CBBE5D4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DE31A746C083FCCF6343C152C9AB7EF5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AECBA61365544F357B06DE1C8710425 /* iOS */,
+				06A6F3CD56EB36CDE7F50B81C03EE134 /* GGWindowManager.modulemap */,
+				4C7A3CFE7EF7985064931C1071267210 /* GGWindowManager-dummy.m */,
+				C1CDF7F1013E676304873E9626B9F933 /* GGWindowManager-Info.plist */,
+				882EAF8DE5626223F5C8D2CACCD7284A /* GGWindowManager-prefix.pch */,
+				2E56EACE86FBA3D4CC9144C1170716BD /* GGWindowManager-umbrella.h */,
+				A051D3A402528645D2714E4F22714C4C /* GGWindowManager.debug.xcconfig */,
+				5DC485DEBDBBA475528BE9E6D14F492C /* GGWindowManager.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GGWindowManager";
 			sourceTree = "<group>";
 		};
-		DB3085D2A8470943FB89664883ADB169 /* GGWindowManager */ = {
+		F112B9F5DA5E0CF39E4D08BD590D10FE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				790415C3676FFE6DC7A322C5032D1CA2 /* GGWindowManager.h */,
-				7025661A20EC3EF53B9E890F6C73AA72 /* GGWindowManager.m */,
-				AD9BFE7C096E06595A83EAF64B4E05C0 /* UIWindow+GG.h */,
-				548D7B7A9D0CBB2598ED5ECDE87F25D4 /* UIWindow+GG.m */,
-				46E03E695D7FCBFF489F85EC9A03FD7E /* Pod */,
-				6E6DB0DFE0FCECEF745D993C3B618AB6 /* Support Files */,
+				F7369DA9E2BA3CC762C1CE7CCD882736 /* GGWindowManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F7369DA9E2BA3CC762C1CE7CCD882736 /* GGWindowManager */ = {
+			isa = PBXGroup;
+			children = (
+				E3CFA7B62F80695B99EAFAE381AE914E /* GGWindowDefine.h */,
+				A1EBC30F65C9ECA885B5392C8711A69A /* GGWindowDefine.m */,
+				4362642FF4D18FAE049CB7594D356B63 /* GGWindowLogHelper.h */,
+				38972EC85C1EBCB4F4E96AEFA5378CAD /* GGWindowLogHelper.m */,
+				F68A5A1B8F61A7AE7BC3A0724341A4B7 /* GGWindowManager.h */,
+				706547AD768BEA535D80EAF3DA834C33 /* GGWindowManager.m */,
+				871E2174706858C8249D9AAA28BCDD85 /* UIWindow+GG.h */,
+				6FE075D4767DED07CF37A27CB22A89C2 /* UIWindow+GG.m */,
+				16994C66D277335838A319F6BE95BC5B /* Pod */,
+				DE31A746C083FCCF6343C152C9AB7EF5 /* Support Files */,
 			);
 			name = GGWindowManager;
 			path = ../..;
@@ -235,16 +357,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2780061795530E1564F6F0126A5ADAC4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				378031B681AF36D5BB543CB776060671 /* GGWindowManager.h in Headers */,
-				25B73C5937465005022BC38200FF51EF /* GGWindowManager-umbrella.h in Headers */,
-				9F104F23798F727D51C98368165DBBAF /* UIWindow+GG.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		354E2E3173C962EB29029D50C8209D4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,11 +365,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BD7130FC730C58F8386A554EEB44309 /* Headers */ = {
+		D11746AC8819C95B85BF3ED1273B7C21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD67121E601B488AB73C9D39B019CD72 /* Pods-GGWindowManager_Example-umbrella.h in Headers */,
+				760708B6C64F185D360FB238B81B729C /* GGWindowDefine.h in Headers */,
+				82B6A9E94790A6D6FD7ED9069CF9C8D0 /* GGWindowLogHelper.h in Headers */,
+				07137759BC29251F1E2757134F40EBB8 /* GGWindowManager.h in Headers */,
+				A16044A27C4363B73549803A46136C59 /* GGWindowManager-umbrella.h in Headers */,
+				E9FBA7B023D19D3C77AA6B69815F7D3B /* UIWindow+GG.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFAC18935560CBB51ABB7CEA52E2B48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A488A5D0AEF2BD9580E8AC67CA7F47A /* Pods-GGWindowManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADE750CFF2C806685AE314EE7FF71B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1739C4B63D12177E58B7110F21E939EB /* SVIndefiniteAnimatedView.h in Headers */,
+				14F6602F47FF59347CB6807CE217EDC5 /* SVProgressAnimatedView.h in Headers */,
+				91930FDB4F9CCBBA9789806D1611AE6F /* SVProgressHUD.h in Headers */,
+				6037BA6633BDFF4F63D6C8B7C70D6160 /* SVProgressHUD-umbrella.h in Headers */,
+				7804E0B3C98A2FE1E98AF544E88C9C3C /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +402,12 @@
 /* Begin PBXNativeTarget section */
 		1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86D784C0DDF81F220084E6C854D70F1A /* Build configuration list for PBXNativeTarget "GGWindowManager" */;
+			buildConfigurationList = A135F963486DBE4E5C68C44FA734BDC2 /* Build configuration list for PBXNativeTarget "GGWindowManager" */;
 			buildPhases = (
-				2780061795530E1564F6F0126A5ADAC4 /* Headers */,
-				7D99AAC443D66F217C72CF7738A1DA61 /* Sources */,
-				439436A4319B2BE5C41FF5265BFFF05F /* Frameworks */,
-				91EB8F16C3BA21D3BA623506FCA91B3D /* Resources */,
+				D11746AC8819C95B85BF3ED1273B7C21 /* Headers */,
+				0FE471D8913C738659E3B6DAC04B4FDC /* Sources */,
+				EA8795B9C497D85C4B4F41D26A6285E1 /* Frameworks */,
+				A81617E7EC6CF87087537CA7B20925D9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +416,24 @@
 			name = GGWindowManager;
 			productName = GGWindowManager;
 			productReference = 95B20B430D9F40767EBEC061687CDFC8 /* GGWindowManager */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69444753864BFEE93D93DCEABA3746A1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				FADE750CFF2C806685AE314EE7FF71B1 /* Headers */,
+				458ACEF2C06C471F7CFF2C2824CA0B34 /* Sources */,
+				58634B2196876B07B5310C7EACCF921E /* Frameworks */,
+				240039A2FB82D44B5CE5DB05D41F6BA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */;
 			productType = "com.apple.product-type.framework";
 		};
 		53252F814894B2E6374F56FF70FF1C86 /* Pods-GGWindowManager_Tests */ = {
@@ -294,7 +448,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5E16C9B3451ECC6473430D94C996A5D6 /* PBXTargetDependency */,
+				7342B11CB50CCC5558920A94D0BEBC5A /* PBXTargetDependency */,
 			);
 			name = "Pods-GGWindowManager_Tests";
 			productName = Pods_GGWindowManager_Tests;
@@ -303,17 +457,18 @@
 		};
 		B828C013203FB3A9917C0C6CEA20E2BD /* Pods-GGWindowManager_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E7ADA3FD00F066B00B41D8746414287 /* Build configuration list for PBXNativeTarget "Pods-GGWindowManager_Example" */;
+			buildConfigurationList = 5B6597038CC68CDAF728734A9AE6AF99 /* Build configuration list for PBXNativeTarget "Pods-GGWindowManager_Example" */;
 			buildPhases = (
-				6BD7130FC730C58F8386A554EEB44309 /* Headers */,
-				54DB664541071890F667BCA9A4BA65BE /* Sources */,
-				7A86AD2B40AC0098FF48791C465D8036 /* Frameworks */,
-				26A659DA5A48B2600143993F7A74DE34 /* Resources */,
+				EEFAC18935560CBB51ABB7CEA52E2B48 /* Headers */,
+				A78971786CB3019C94613E82DECDD967 /* Sources */,
+				D7C1461D617BC560FD30BD62543D5CED /* Frameworks */,
+				40B0F5AFD1D9B976C97000F97DB0C9E7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC64D7989933419875822761B7E32A0C /* PBXTargetDependency */,
+				F00C567961967798DE3A72680999A8B3 /* PBXTargetDependency */,
+				64999C485178CFB7EF6A5D04481E147D /* PBXTargetDependency */,
 			);
 			name = "Pods-GGWindowManager_Example";
 			productName = Pods_GGWindowManager_Example;
@@ -340,22 +495,25 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 100;
-			productRefGroup = 59F23D65BA05C9DC6C433EE594297D1E /* Products */;
+			productRefGroup = 9358DA57C32B0F3DAA6C386479F0AB22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */,
 				B828C013203FB3A9917C0C6CEA20E2BD /* Pods-GGWindowManager_Example */,
 				53252F814894B2E6374F56FF70FF1C86 /* Pods-GGWindowManager_Tests */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		26A659DA5A48B2600143993F7A74DE34 /* Resources */ = {
+		240039A2FB82D44B5CE5DB05D41F6BA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89717EC07E6324D3405867E754AE9131 /* PrivacyInfo.xcprivacy in Resources */,
+				7B0DD32902633C7FF95B5745D8322BC3 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +524,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91EB8F16C3BA21D3BA623506FCA91B3D /* Resources */ = {
+		40B0F5AFD1D9B976C97000F97DB0C9E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81617E7EC6CF87087537CA7B20925D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,6 +541,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0FE471D8913C738659E3B6DAC04B4FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED0F2EBF641E20B066A00C205F92BA7 /* GGWindowDefine.m in Sources */,
+				A1A06B57BDB7A8027F11129E13D8A3E7 /* GGWindowLogHelper.m in Sources */,
+				12220F4861601349F6B54CEF39209193 /* GGWindowManager.m in Sources */,
+				A867BD36B9343E33C64BECA526673803 /* GGWindowManager-dummy.m in Sources */,
+				97C6C9FFFF1D0FE419A0CAE48576AF6C /* UIWindow+GG.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38545AE8B27B83CCD107B063F3E17ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,42 +561,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54DB664541071890F667BCA9A4BA65BE /* Sources */ = {
+		458ACEF2C06C471F7CFF2C2824CA0B34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73064DBDAA0C14DCF622924DC052527 /* Pods-GGWindowManager_Example-dummy.m in Sources */,
+				CEC96BA519484844D19338CC420C8808 /* SVIndefiniteAnimatedView.m in Sources */,
+				E30E824D8CE04C815FAD7F424CF7C270 /* SVProgressAnimatedView.m in Sources */,
+				F87D4D6C6668A4AA86232BA3BDB9A178 /* SVProgressHUD.m in Sources */,
+				FB75853E6A0E0682E1000CFBD293EBBC /* SVProgressHUD-dummy.m in Sources */,
+				517CF33F75EA768ED4B7F0F440F54A7E /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D99AAC443D66F217C72CF7738A1DA61 /* Sources */ = {
+		A78971786CB3019C94613E82DECDD967 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B30F02795C3B6783506C642D284DF4 /* GGWindowManager.m in Sources */,
-				D7EC777421CAA8EB8F9220066A323586 /* GGWindowManager-dummy.m in Sources */,
-				72219A369107B5F9326D7919B756BDFB /* UIWindow+GG.m in Sources */,
+				03393819F59038BEF302844BFD76264B /* Pods-GGWindowManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E16C9B3451ECC6473430D94C996A5D6 /* PBXTargetDependency */ = {
+		64999C485178CFB7EF6A5D04481E147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = D83B3EACEDD00474F07C138640F33A66 /* PBXContainerItemProxy */;
+		};
+		7342B11CB50CCC5558920A94D0BEBC5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GGWindowManager_Example";
 			target = B828C013203FB3A9917C0C6CEA20E2BD /* Pods-GGWindowManager_Example */;
-			targetProxy = 5169C1BC330A15C352AB576817523AB7 /* PBXContainerItemProxy */;
+			targetProxy = DA4884B81D66B56CC8351C20F24E401F /* PBXContainerItemProxy */;
 		};
-		EC64D7989933419875822761B7E32A0C /* PBXTargetDependency */ = {
+		F00C567961967798DE3A72680999A8B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GGWindowManager;
 			target = 1B7E5D0A227A1231F89942D1156855A7 /* GGWindowManager */;
-			targetProxy = C43D5AA22DB56E6DC5B6E33C16E320F6 /* PBXContainerItemProxy */;
+			targetProxy = E587B4B406AA6CDD25924A22F43F1EC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1E0F51C67A2D2B57E7997D9B00201BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C66CEFC6F88E7641C57B569B1636A3 /* SVProgressHUD.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51832B1DE58CE5B152DB1966CD42B569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC485DEBDBBA475528BE9E6D14F492C /* GGWindowManager.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
+				PRODUCT_MODULE_NAME = GGWindowManager;
+				PRODUCT_NAME = GGWindowManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		783133EFB56641B54D9691408F63A5C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C284E513C473DDF325B7E96E90A3D045 /* Pods-GGWindowManager_Tests.release.xcconfig */;
@@ -621,46 +880,9 @@
 			};
 			name = Release;
 		};
-		AE16ECDF10788F792AC8C254A4D5A8F1 /* Release */ = {
+		A006C4E752DC8E5B5710AE013BD57C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFB1655822C0D4737EB9CB4FE480D412 /* GGWindowManager.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GGWindowManager/GGWindowManager-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GGWindowManager/GGWindowManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GGWindowManager/GGWindowManager.modulemap";
-				PRODUCT_MODULE_NAME = GGWindowManager;
-				PRODUCT_NAME = GGWindowManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CAC689206900CAED71351F2E887C930C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57D2C24B670FB14B1E38B97AD8D5B1A0 /* GGWindowManager.debug.xcconfig */;
+			baseConfigurationReference = A051D3A402528645D2714E4F22714C4C /* GGWindowManager.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -694,7 +916,7 @@
 			};
 			name = Debug;
 		};
-		D9591CF60B1B4B664A05548AA386CED9 /* Debug */ = {
+		D2DAEE7A8C15721A510BCB85151DB0D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 082DB6ABFE19939D6C6BF8DB1C1F7843 /* Pods-GGWindowManager_Example.debug.xcconfig */;
 			buildSettings = {
@@ -730,7 +952,7 @@
 			};
 			name = Debug;
 		};
-		DEDA9F76812BC8F86611170DDA217951 /* Release */ = {
+		E806B935D72E0CADF4ABB98235A7903C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14FADE197B233FFD4B0209E325D65D86 /* Pods-GGWindowManager_Example.release.xcconfig */;
 			buildSettings = {
@@ -767,6 +989,42 @@
 			};
 			name = Release;
 		};
+		E9B31340E63B97F255441A9C438F6F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B296B3DE9173276FF560200279D18D /* SVProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -775,6 +1033,24 @@
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B6597038CC68CDAF728734A9AE6AF99 /* Build configuration list for PBXNativeTarget "Pods-GGWindowManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DAEE7A8C15721A510BCB85151DB0D6 /* Debug */,
+				E806B935D72E0CADF4ABB98235A7903C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69444753864BFEE93D93DCEABA3746A1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B31340E63B97F255441A9C438F6F86 /* Debug */,
+				1E0F51C67A2D2B57E7997D9B00201BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -788,20 +1064,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86D784C0DDF81F220084E6C854D70F1A /* Build configuration list for PBXNativeTarget "GGWindowManager" */ = {
+		A135F963486DBE4E5C68C44FA734BDC2 /* Build configuration list for PBXNativeTarget "GGWindowManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAC689206900CAED71351F2E887C930C /* Debug */,
-				AE16ECDF10788F792AC8C254A4D5A8F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9E7ADA3FD00F066B00B41D8746414287 /* Build configuration list for PBXNativeTarget "Pods-GGWindowManager_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9591CF60B1B4B664A05548AA386CED9 /* Debug */,
-				DEDA9F76812BC8F86611170DDA217951 /* Release */,
+				A006C4E752DC8E5B5710AE013BD57C24 /* Debug */,
+				51832B1DE58CE5B152DB1966CD42B569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

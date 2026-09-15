@@ -3,6 +3,7 @@
 #import "GGTestDetailViewController.h"
 #import <UIWindow+GG.h>
 #import <GGWindowManager.h>
+#import <SVProgressHUD.h>
 
 @interface GGViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -37,8 +38,20 @@
             UIWindow *keyWindow = [UIWindow getKeyWindow];
             if (keyWindow) {
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"弹窗测试" message:@"此弹窗由 getKeyWindow 触发" preferredStyle:UIAlertControllerStyleAlert];
-                [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
+                [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [SVProgressHUD dismiss];
+                }]];
                 [keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    UIWindow *alertKeyWin = [UIWindow getKeyWindow];
+                    if (alertKeyWin) {
+                        [SVProgressHUD setMaxSupportedWindowLevel:UIWindowLevelNormal];
+                        [SVProgressHUD showWithStatus:@"测试能否展示"];
+                    } else {
+                        showAlert(@"HUD测试失败", @"无法获取Alert的顶层window");
+                    }
+                });
             } else {
                 showAlert(@"测试失败", @"KeyWindow 为空");
             }

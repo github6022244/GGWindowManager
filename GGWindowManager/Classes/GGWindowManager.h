@@ -1,3 +1,10 @@
+//
+//  GGWindowManager.h
+//  GGCommenAppFundation
+//
+//  Created by GG on 2022/6/1.
+//
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -9,15 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取当前用户正在交互的活跃 Scene
 @property (nonatomic, weak, readonly, nullable) UIWindowScene *currentActiveScene;
 
-#pragma mark - Scene 生命周期回调（由 SceneDelegate 调用）
-
-/// Scene 变为活跃时调用，记录为当前活跃 Scene
-/// @param scene 传入 UIScene，内部会过滤，仅接受 UIWindowScene
-- (void)sceneDidBecomeActive:(nullable UIScene *)scene;
-
-/// Scene 断开连接时调用，内部会判断"是否正好是记录的活跃 Scene"，是则清空
-/// @param scene 传入 UIScene，内部会过滤，仅接受 UIWindowScene
-- (void)sceneDidDisconnect:(nullable UIScene *)scene;
+/// 启动窗口管理
+/// @note 可选调用。不调用也能工作，只是第一次 getKeyWindow 可能走兜底遍历。
+///       建议在 AppDelegate 的 didFinishLaunchingWithOptions 中调用，确保通知尽早注册。
++ (void)start;
 
 @end
 

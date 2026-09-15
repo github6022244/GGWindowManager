@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 target 'GGWindowManager_Example' do
   pod 'GGWindowManager', :path => '../'
+  pod 'SVProgressHUD'
 
   target 'GGWindowManager_Tests' do
     inherit! :search_paths
